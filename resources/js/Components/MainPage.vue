@@ -1,13 +1,14 @@
 <template>
     <div class="main-page">
-        <h1 data-aos="fade-up">
+        <h1 data-aos="fade-up" class="header-title">
+            <img src="/images/profile-image.jpg" alt="Daniil Perepelitsa" class="header-photo">
             <span class="glow-text">Hey, I'm Daniil Perepelitsa.</span>
         </h1>
 
         <section class="description">
             <div class="content">
                 <p class="highlight-text">
-                    I am a <span class="highlight">full stack</span> developer.
+                    I have <span class="highlight">5 years</span> of experience as a <span class="highlight">full stack</span> developer.
                 </p>
                 <p>
                     When I'm developing, I focus on <span class="highlight">speed</span> and <span class="highlight">security</span>. I'm passionate about learning new technologies, toolkits, and methodologies.
@@ -117,6 +118,23 @@ export default {
 </script>
 
 <style scoped>
+.header-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+
 .main-page {
     max-width: 100%;
     padding: 40px;
@@ -136,7 +154,6 @@ h1 {
 
 h1 .glow-text {
     color: #58824b;
-    text-shadow: 0 0 10px #58824b, 0 0 20px #58824b, 0 0 40px #58824b;
 }
 
 h2, h4 {
@@ -183,8 +200,8 @@ h2 {
 
 .glow-btn {
     background: transparent;
-    color: #58824b;
-    border: 2px solid #58824b;
+    color: #eaf0e9;
+    border: 2px solid #eaf0e9;
     padding: 10px 20px;
     font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
@@ -192,22 +209,23 @@ h2 {
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 0 10px rgba(88, 130, 75, 0.8), 0 0 20px rgba(88, 130, 75, 0.5);
+    box-shadow: 0 0 10px rgba(234, 240, 233, 0.8), 0 0 20px rgba(234, 240, 233, 0.5);
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.glow-btn:hover {
+    background: #eaf0e9;
+    color: #101216;
+    box-shadow: 0 0 20px rgba(234, 240, 233, 0.8), 0 0 40px rgba(234, 240, 233, 0.5);
 }
 
 .glow-btn:disabled {
     opacity: 0.7;
 }
 
-.glow-btn:hover {
-    background: #58824b;
-    color: black;
-    box-shadow: 0 0 20px #58824b, 0 0 40px #58824b;
-    transform: translateY(-3px);
-}
+
 
 ul {
     padding-left: 20px;
