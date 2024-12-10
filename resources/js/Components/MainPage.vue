@@ -156,6 +156,18 @@ p .highlight {
     color: #58824b;
     font-weight: bold;
 }
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #58824b;
+    text-shadow: 0 0 10px rgba(88, 130, 75, 0.8), 0 0 20px rgba(88, 130, 75, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
 
 .skills-section {
     margin-bottom: 60px;
@@ -174,11 +186,16 @@ p .highlight {
     color: #58824b;
     border: 2px solid #58824b;
     padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 30px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 0 10px #58824b, 0 0 20px #58824b;
+    box-shadow: 0 0 10px rgba(88, 130, 75, 0.8), 0 0 20px rgba(88, 130, 75, 0.5);
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .glow-btn:disabled {
@@ -187,8 +204,9 @@ p .highlight {
 
 .glow-btn:hover {
     background: #58824b;
-    color: #101216;
+    color: black;
     box-shadow: 0 0 20px #58824b, 0 0 40px #58824b;
+    transform: translateY(-3px);
 }
 
 ul {
