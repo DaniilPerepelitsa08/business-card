@@ -68,6 +68,21 @@
                 </div>
             </div>
 
+            <section data-aos="fade-up" class="testimonials">
+                <h2 class="section-title">What people say about me</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <img src="/images/reviews/review-1.png" alt="Review 1">
+                    </div>
+                    <div class="testimonial">
+                        <img src="/images/reviews/review-2.png" alt="Review 2">
+                    </div>
+                    <div class="testimonial">
+                        <img src="/images/reviews/review-3.png" alt="Review 3">
+                    </div>
+                </div>
+            </section>
+
 
             <section data-aos="fade-up" class="links">
                 <div class="contact-text">
@@ -120,13 +135,13 @@ h1 {
 }
 
 h1 .glow-text {
-    color: #9e65c7;
-    text-shadow: 0 0 10px #9e65c7, 0 0 20px #9e65c7, 0 0 40px #9e65c7;
+    color: #58824b;
+    text-shadow: 0 0 10px #58824b, 0 0 20px #58824b, 0 0 40px #58824b;
 }
 
 h2, h4 {
-    color: #9e65c7;
-    text-shadow: 0 0 10px #9e65c7;
+    color: #58824b;
+    text-shadow: 0 0 10px #58824b;
     margin-bottom: 20px;
 }
 
@@ -138,7 +153,7 @@ p {
 }
 
 p .highlight {
-    color: #9e65c7;
+    color: #58824b;
     font-weight: bold;
 }
 
@@ -156,14 +171,14 @@ p .highlight {
 
 .glow-btn {
     background: transparent;
-    color: #9e65c7;
-    border: 2px solid #9e65c7;
+    color: #58824b;
+    border: 2px solid #58824b;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 0 10px #9e65c7, 0 0 20px #9e65c7;
+    box-shadow: 0 0 10px #58824b, 0 0 20px #58824b;
 }
 
 .glow-btn:disabled {
@@ -171,9 +186,9 @@ p .highlight {
 }
 
 .glow-btn:hover {
-    background: #9e65c7;
+    background: #58824b;
     color: #101216;
-    box-shadow: 0 0 20px #9e65c7, 0 0 40px #9e65c7;
+    box-shadow: 0 0 20px #58824b, 0 0 40px #58824b;
 }
 
 ul {
@@ -225,18 +240,12 @@ a {
     gap: 20px;
     margin-top: 40px;
 }
-.futuristic-block {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 40px;
-}
 
 .card {
     background: linear-gradient(135deg, #1e1e2a, #2e2e3d);
-    border: 1px solid rgba(158, 101, 199, 0.5);
+    border: 1px solid rgba(88, 130, 75, 0.5);
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(158, 101, 199, 0.3), 0 0 30px rgba(158, 101, 199, 0.1);
+    box-shadow: 0 0 15px rgba(88, 130, 75, 0.3), 0 0 30px rgba(88, 130, 75, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 20px;
@@ -244,13 +253,13 @@ a {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 25px rgba(158, 101, 199, 0.6), 0 0 50px rgba(158, 101, 199, 0.3);
+    box-shadow: 0 0 25px rgba(88, 130, 75, 0.6), 0 0 50px rgba(88, 130, 75, 0.3);
 }
 
 .card-header h2 {
     font-size: 1.5rem;
-    color: #9e65c7;
-    text-shadow: 0 0 10px #9e65c7, 0 0 20px #9e65c7;
+    color: #58824b;
+    text-shadow: 0 0 10px #58824b, 0 0 20px #58824b;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -278,8 +287,58 @@ a {
     transform: translateY(-50%);
     width: 8px;
     height: 8px;
-    background: #9e65c7;
+    background: #58824b;
     border-radius: 50%;
-    box-shadow: 0 0 5px #9e65c7, 0 0 10px #9e65c7;
+    box-shadow: 0 0 5px #58824b, 0 0 10px #58824b;
+}
+
+.testimonials {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #58824b;
+    text-shadow: 0 0 10px #58824b, 0 0 20px #58824b;
+    margin-bottom: 40px;
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.testimonial {
+    max-width: 600px;
+    padding: 5px;
+    border: 1px solid rgba(88, 130, 75, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(88, 130, 75, 0.3), 0 0 30px rgba(88, 130, 75, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(88, 130, 75, 0.6), 0 0 50px rgba(88, 130, 75, 0.3);
+}
+
+.testimonial img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(88, 130, 75, 0.4);
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        gap: 20px;
+    }
+
+    .testimonial {
+        max-width: 100%;
+    }
 }
 </style>
+
