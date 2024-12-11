@@ -2,7 +2,7 @@
     <div class="main-page">
         <h1 data-aos="fade-up" class="header-title">
             <img src="/images/profile-image.jpg" alt="Daniil Perepelitsa" class="header-photo">
-            <span class="glow-text">Hey, I'm Daniil Perepelitsa.</span>
+            <h2 class="glow-text">Hey, I'm Daniil Perepelitsa.</h2>
         </h1>
 
         <section class="description">
@@ -21,22 +21,44 @@
 
         <div class="info-container">
             <div class="skills-section">
-                <h4>Backend Skills:</h4>
+<!--                <h4>Backend Skills:</h4>-->
                 <div class="skills-grid">
-                    <button class="glow-btn" disabled>PHP</button>
-                    <button class="glow-btn" disabled>Laravel</button>
+                    <button class="glow-btn" disabled>
+                        <img src="/images/icons/php.png" alt="PHP Icon" class="icon">
+                        PHP
+                    </button>
+                    <button class="glow-btn" disabled>
+                        <img src="/images/icons/laravel.png" alt="Laravel Icon" class="icon">
+                        Laravel
+                    </button>
+                    <button class="glow-btn" disabled>
+                        <img src="/images/icons/docker.png" alt="Docker Icon" class="icon">
+                        Docker
+                    </button>
                     <button class="glow-btn" disabled>LAMP</button>
-                    <button class="glow-btn" disabled>Docker</button>
                 </div>
             </div>
 
             <div class="skills-section">
-                <h4>Frontend Skills:</h4>
+<!--                <h4>Frontend Skills:</h4>-->
                 <div class="skills-grid">
-                    <button class="glow-btn" disabled>Vue.js</button>
-                    <button class="glow-btn" disabled>Vue 3</button>
+                    <button class="glow-btn" disabled>
+                        <img src="/images/icons/vue.png" alt="Vue Icon" class="icon">
+                        Vue.js
+                    </button>
+                    <button class="glow-btn" disabled>
+                        <img src="/images/icons/vue.png" alt="Vue Icon" class="icon">
+                        Vue 3
+                    </button>
+                    <button class="glow-btn" disabled>
+                        <img src="/images/icons/html.png" alt="HTML/CSS Icon" class="icon">
+                        HTML
+                    </button>
+                    <button class="glow-btn" disabled>
+                        <img src="/images/icons/css.png" alt="HTML/CSS Icon" class="icon">
+                        CSS
+                    </button>
                     <button class="glow-btn" disabled>Vuex</button>
-                    <button class="glow-btn" disabled>HTML / CSS</button>
                 </div>
             </div>
 
@@ -44,6 +66,7 @@
                 <div class="col">
                     <section data-aos="fade-up" class="card">
                         <div class="card-header">
+                            <img src="/images/icons/database.png" alt="Docker Icon" class="icon">
                             <h2>Databases:</h2>
                         </div>
                         <div class="card-content">
@@ -58,11 +81,12 @@
                 <div class="col">
                     <section data-aos="fade-up" class="card">
                         <div class="card-header">
-                            <h2>Also Experienced in:</h2>
+                            <img src="/images/icons/git.png" alt="Docker Icon" class="icon">
+                            <h2>Version control:</h2>
                         </div>
                         <div class="card-content">
                             <ul>
-                                <li>Version control using Git, proficient with Git Flow</li>
+                                <li>Git, proficient with Git Flow</li>
                             </ul>
                         </div>
                     </section>
@@ -70,7 +94,7 @@
             </div>
 
             <section data-aos="fade-up" class="testimonials">
-                <h2 class="section-title">What people say about me</h2>
+                <h2 class="section-title">What people say about me:</h2>
                 <div class="testimonials-grid">
                     <div class="testimonial">
                         <img src="/images/reviews/review-1.png" alt="Review 1">
@@ -80,6 +104,9 @@
                     </div>
                     <div class="testimonial">
                         <img src="/images/reviews/review-3.png" alt="Review 3">
+                    </div>
+                    <div class="testimonial">
+                        <img src="/images/reviews/review-4.png" alt="Review 4">
                     </div>
                 </div>
             </section>
@@ -131,7 +158,7 @@ export default {
     display: flex;
     align-items: center;
     text-align: center;
-    font-size: 4rem;
+    font-size: 1rem;
     margin-bottom: 40px;
 }
 
@@ -275,10 +302,11 @@ a {
     justify-content: space-between;
     gap: 20px;
     margin-top: 40px;
+    background: linear-gradient(120deg, #101216, #1a1d25);
 }
 
 .card {
-    background: linear-gradient(135deg, #1e1e2a, #2e2e3d);
+    background: linear-gradient(120deg, #101216, #1a1d25);
     border: 1px solid rgba(88, 130, 75, 0.5);
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(88, 130, 75, 0.3), 0 0 30px rgba(88, 130, 75, 0.1);
@@ -292,14 +320,25 @@ a {
     box-shadow: 0 0 25px rgba(88, 130, 75, 0.6), 0 0 50px rgba(88, 130, 75, 0.3);
 }
 
-.card-header h2 {
-    font-size: 1.5rem;
-    color: #58824b;
-    text-shadow: 0 0 10px #58824b, 0 0 20px #58824b;
-    margin-bottom: 15px;
-    text-align: center;
+.card-header {
+    display: flex; /* Включаем flexbox */
+    align-items: center; /* Выравнивание по вертикали */
+    gap: 10px; /* Отступ между иконкой и текстом */
 }
 
+.card-header h2 {
+    font-size: 1.5rem;
+    color: #dbdbdb;
+    text-shadow: 0 0 10px #58824b, 0 0 20px #58824b;
+    margin: 0; /* Убираем лишние отступы */
+    text-align: left; /* Выравнивание текста */
+}
+
+.card-header .icon {
+    width: 24px; /* Размер иконки */
+    height: 24px;
+    flex-shrink: 0; /* Запрет уменьшения иконки */
+}
 .card-content ul {
     list-style: none;
     padding: 0;
