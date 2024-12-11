@@ -321,23 +321,23 @@ a {
 }
 
 .card-header {
-    display: flex; /* Включаем flexbox */
-    align-items: center; /* Выравнивание по вертикали */
-    gap: 10px; /* Отступ между иконкой и текстом */
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .card-header h2 {
     font-size: 1.5rem;
     color: #dbdbdb;
     text-shadow: 0 0 10px #58824b, 0 0 20px #58824b;
-    margin: 0; /* Убираем лишние отступы */
-    text-align: left; /* Выравнивание текста */
+    margin: 0;
+    text-align: left;
 }
 
 .card-header .icon {
-    width: 24px; /* Размер иконки */
+    width: 24px;
     height: 24px;
-    flex-shrink: 0; /* Запрет уменьшения иконки */
+    flex-shrink: 0;
 }
 .card-content ul {
     list-style: none;
